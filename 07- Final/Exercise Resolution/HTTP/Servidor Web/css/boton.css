@@ -1,0 +1,24 @@
+.boton
+{
+   min-width:20%;
+   border: none;
+   text-align:center;
+   font-size:100%;
+   line-height: 2em;
+   font-weight: lighter;
+   background-color:rgba(0, 152, 0, 0.3);
+   margin:0.6%;
+   padding: 0.8% 0.9%;
+   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 9px 0 rgba(0, 0, 0, 0.19);
+   border-radius: 2px;
+   box-sizing: border-box;
+} 
+
+.boton:hover
+{
+    background-color:rgba(0, 152, 0, 0.1);
+    -moz-transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+}

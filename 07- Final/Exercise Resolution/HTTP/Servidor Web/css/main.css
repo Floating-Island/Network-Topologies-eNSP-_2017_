@@ -1,0 +1,37 @@
+body
+{
+    width:80%;
+    margin: auto;
+    font-weight: lighter;
+}
+.box
+{
+    border-radius: 2px;
+}
+.header_box
+{
+    height:5em;
+    margin:0.5% 0;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 9px 0 rgba(0, 0, 0, 0.19);
+}
+.formulario_box
+{
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 9px 0 rgba(0, 0, 0, 0.19);
+}
+
+.div_boton_header
+{
+    margin:1% 0%;
+    text-align: center;
+}
+.content_box
+{
+    display: block;
+    margin:1% 0;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 9px 0 rgba(0, 0, 0, 0.19);
+}
+.footer_box
+{
+    margin: 5% 0;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 9px 0 rgba(0, 0, 0, 0.19);
+}

@@ -1,0 +1,21 @@
+@import "general.css";
+@import "form.css";
+@import "lista.css";
+@import "boton.css";
+@import "boton_header";
+@import "boton_menu";
+
+.lista_box
+{
+    clear:right;
+    box-sizing:border-box;
+}
+
+
+.formulario_box
+{
+    float:left;
+    clear:right;
+    width:50%;
+    box-sizing:border-box;
+}

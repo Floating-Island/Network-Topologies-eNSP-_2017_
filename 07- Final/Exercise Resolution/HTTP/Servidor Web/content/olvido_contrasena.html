@@ -1,0 +1,73 @@
+<!DOCTYPE HTML5>
+
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+        <title>MartSaver - registro</title>
+        <link type="text/css" href="../css/general.css" rel="stylesheet"/>
+        <link type="text/css" href="../css/boton.css" rel="stylesheet"/>
+        <link type="text/css" href="../css/boton_header.css" rel="stylesheet"/>
+        <link type="text/css" href="../css/boton_menu.css" rel="stylesheet"/>
+        <link type="text/css" href="../css/form.css" rel="stylesheet"/>
+        <link type="text/css" href="../css/lista.css" rel="stylesheet"/>
+        <link type="text/css" href="../css/header.css" rel="stylesheet"/>
+        <link type="text/css" href="../css/footer.css" rel="stylesheet"/>
+        <link type="text/css" href="../css/main.css" rel="stylesheet"/>
+        <link type="text/css" href="../css/index.css" rel="stylesheet"/>
+        <link type="text/css" href="../css/inicio_registrar.css" rel="stylesheet"/>
+        <script src="../js/main.js"></script> 
+    </head>
+    <body>
+         <div class="header_box">
+            <div class="header_div">
+                <div class="header_left">
+                    <a href="index.html">
+                        <img src="../images/logo3.png" class="header_logo_img" alt="logo"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content_box">
+            
+
+            <div class="center_content">
+                   <div class="formulario_box">
+                        <form id="contrasena_olvidada" name="contrasena_olvidada" class="formulario_form" method="POST">
+                            <fieldset>
+                                <legend>Rellene el campo:</legend>
+
+                                <div class="marcoinput" id="mail">
+                                    <label class="label_form"> Mail: </label>
+                                    <input class="validar input_form" id="inputmail" type="text" placeholder="alguien@correo.com" onclick="editar(this.id);" onblur='validarmail(this.id,"errormail");' autocomplete='off' required>
+                                    <span class="errorvalidacion span_form_alerta" id="errormail">Error, reingresar datos.</span>
+                                </div> 
+                                <span class="textoInformativo">En unos instantes recibirá un mensaje al correo indicado con los datos para ingresar una nueva contraseña.</span>      
+                            </fieldset>
+                                <div class="marcosubmit" id="olvidocontrasena_submit">
+
+                                    <input class="submit_form" type="submit" value="Aceptar">
+                                </div>
+                            
+                        </form>
+                    </div> 
+            </div>
+
+            
+        </div>
+        
+        <div class="footer_box">
+            <div class="footer">
+                <div class="left_footer"> 
+                    <img class="footer_img_logo" src="../images/logo2.png" alt="logo2"/> 
+                </div>
+                <div class="center_footer"> 
+                    <p>MartSaver. Todos los derechos reservados.</p>
+                    <img class="footer_img_logo" src="../images/payment.gif" alt="payment" />
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>

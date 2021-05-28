@@ -1,0 +1,9 @@
+.center_content
+{
+    display: inline-block;
+    max-width: 70%;
+}
+.left_content,.right_content
+{
+    max-width: 30%;
+}

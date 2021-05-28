@@ -1,0 +1,113 @@
+<!DOCTYPE HTML5>
+
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+        <title>MartSaver - registro</title>
+        <link type="text/css" href="../css/general.css" rel="stylesheet"/>
+        <link type="text/css" href="../css/boton.css" rel="stylesheet"/>
+        <link type="text/css" href="../css/boton_header.css" rel="stylesheet"/>
+        <link type="text/css" href="../css/boton_menu.css" rel="stylesheet"/>
+        <link type="text/css" href="../css/form.css" rel="stylesheet"/>
+        <link type="text/css" href="../css/lista.css" rel="stylesheet"/>
+        <link type="text/css" href="../css/header.css" rel="stylesheet"/>
+        <link type="text/css" href="../css/footer.css" rel="stylesheet"/>
+        <link type="text/css" href="../css/main.css" rel="stylesheet"/>
+        <link type="text/css" href="../css/index.css" rel="stylesheet"/>
+        <link type="text/css" href="../css/registrar.css" rel="stylesheet"/>
+        <script src="../js/main.js"></script> 
+    </head>
+    <body>
+         <div class="header_box">
+            <div class="header_div">
+                <div class="header_left">
+                    <a href="index.html">
+                        <img src="../images/logo3.png" class="header_logo_img" alt="logo"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content_box">
+            
+
+            <div class="center_content">
+                   <div class="formulario_box">
+                        <form id="registro_clientes" name="registro_clientes" class="formulario_form" method="POST">
+                            <fieldset>
+                                <legend>Datos:</legend>
+                                <span class="textoInformativo">Los campos con asterisco(*), son obligatorios.</span>
+
+                                <div class="marcoinput" id="alias">
+                                    <label class="label_form"> Alias: </label>
+                                    <input class="validar input_form" id="inputalias" type="text" placeholder="MyNameIsAlias" onclick="editar(this.id);" onblur='validarpalabra(this.id,"erroralias");' autocomplete='off' required>
+                                    <span class="errorvalidacion span_form_alerta" id="erroralias">Error, reingresar datos.</span>
+                                </div>
+                                <div class="marcoinput" id="nombre">
+                                    <label class="label_form"> Nombre: </label>
+                                    <input class="validar input_form" id="inputnombre" type="text" placeholder="Charls" onclick="editar(this.id);" onblur='validarpalabra(this.id,"errornombre");' autocomplete='off' required>
+                                    <span class="errorvalidacion span_form_alerta" id="errornombre">Error, reingresar datos.</span>
+                                </div>
+                                <div class="marcoinput" id="apellido">
+                                    <label class="label_form"> Apellido: </label>
+                                    <input class="validar input_form" id="inputapellido" type="text" placeholder="Swanson" onclick="editar(this.id);" onblur='validarpalabra(this.id,"errorapellido");' autocomplete='off' required>
+                                    <span class="errorvalidacion span_form_alerta" id="errorapellido">Error, reingresar datos.</span>
+                                </div>
+                                <div class="marcoinput" id="dni">
+                                    <label class="label_form"> DNI: </label>
+                                    <input class="validar obligatorio input_form" id="inputdni" type="text" placeholder="xxxxxxxx" onclick="editar(this.id);" onblur='validardni(this.id,"errordni");validarobligatorio(this.id);' autocomplete='off' required>
+                                    <span class="errorvalidacion span_form_alerta" id="errordni">Error, reingresar datos.</span>
+                                    <span class="errorobligatorio span_form_alerta" id="errordigitosobligatorio">Este campo debe ser completado.</span>
+                                </div> 
+                                <div class="marcoinput" id="mail">
+                                    <label class="label_form"> Mail: </label>
+                                    <input class="validar input_form" id="inputmail" type="text" placeholder="alguien@correo.com" onclick="editar(this.id);" onblur='validarmail(this.id,"errormail");' autocomplete='off' required>
+                                    <span class="errorvalidacion span_form_alerta" id="errormail">Error, reingresar datos.</span>
+                                </div> 
+                                <div class="marcoinput" id="direccion">
+                                    <label class="label_form"> Direccion: </label>
+                                    <input class="validar input_form" id="inputdireccion" type="text" placeholder="Av. Siempreviva" onclick="editar(this.id);" onblur='validarpalabra(this.id,"errordireccion");' autocomplete='off' required>
+                                    <span class="errorvalidacion span_form_alerta" id="errordireccion">Error, reingresar datos.</span>
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Contraseña:</legend>
+                                <span class="textoInformativo">Mínimo de 8 caracteres.</span>
+                                <div class="marcoinput" id="Contrasena">
+                                    <label class="label_form"> Contraseña: </label>
+                                    <input class="validar input_form" id="inputcontrasena" type="password" placeholder="FlyingCachito" onclick="editar(this.id);" onblur='validarcontrasena(this.id,"errorcontrasena");' autocomplete='off' required>
+                                    <span class="errorvalidacion span_form_alerta" id="errorcontrasena">Error, se requiere un mínimo de 8 caracteres.</span>
+                                </div>
+                                <div class="marcoinput" id="Contrasenaconfirmar">
+                                    <label class="label_form"> Confirmar contraseña: </label>
+                                    <input class="validar input_form" id="inputcontrasenaconfirmar" type="password" placeholder="FlyingCachito2" onclick="editar(this.id);" onblur='chequeaigualdad(this.id,"inputcontrasena","errorconfirmarcontrasena");' autocomplete='off' required>
+                                    <span class="errorvalidacion span_form_alerta" id="errorconfirmarcontrasena">Error, las contraseñas no coinciden.</span>
+                                </div>        
+                            </fieldset>
+                                <div class="marcosubmit" id="guardar">
+                                    <input class="submit_form" type="submit" value="Guardar">
+                                </div>
+                            
+                        </form>
+                    </div> 
+            </div>
+
+            
+        </div>
+        
+        <div class="footer_box">
+            <div class="footer">
+                <div class="left_footer"> 
+                    <img class="footer_img_logo" src="../images/logo2.png" alt="logo2"/> 
+                </div>
+                <div class="center_footer"> 
+                    <p>MartSaver. Todos los derechos reservados.</p>
+                    <img class="footer_img_logo" src="../images/payment.gif" alt="payment" />
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>

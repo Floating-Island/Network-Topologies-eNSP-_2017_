@@ -1,0 +1,27 @@
+*
+{
+        font-family: "Segoe UI",Arial,sans-serif;
+}
+a 
+{
+    text-decoration: none;
+    color: black;
+}
+body
+{
+    font-size: 100%;
+    background-color: rgba(0, 152, 0, 0.3);
+    overflow: auto;
+    box-sizing: border-box;
+}
+input
+{
+    font-size: 100%;
+    line-height: 200%;
+    margin:0.5%;
+    box-sizing: border-box;
+    padding: 0.8% 0.9%;
+    border-width: 1%;
+    border-style:solid;
+    max-width: 70%;
+}

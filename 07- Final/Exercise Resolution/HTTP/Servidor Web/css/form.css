@@ -1,0 +1,100 @@
+.formulario_form
+{
+    background-color:rgba(0, 152, 0, 0.2);
+    display:block;
+}
+fieldset
+{
+    border-style:none;
+}
+legend
+{
+
+    font-size: 110%;
+    margin-top: 0.5%;/*5px*/
+    margin-left: 0.5%;
+    margin-bottom:0.9%;/*10px*/
+    border-radius:0.9%;
+}
+.marcoinput
+{
+    width:98%;
+    display: inline-block;
+    margin: 0.5%;
+}
+.label_form
+{
+    width: 45%;
+    margin: 0.5%;
+    font-size: 120%;
+    line-height: 200%;
+    display:inline-block;
+}
+.input_form
+{
+    background-color: rgba(0, 152, 0, 0.2);
+    border-color: rgba(140, 140, 140, 0.4);
+    min-width: 30%;
+    margin: 0.5%;
+    display: inline-block;
+}
+.marcosubmit
+{
+    width:98%;
+    display: inline-block;
+    margin: 0.5%;
+    text-align: right;
+}
+.submit_form
+{
+    float: right;
+    clear:right;
+    background-color:rgba(0, 152, 0, 0.3);
+    border:none;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 9px 0 rgba(0, 0, 0, 0.19);
+    box-sizing: border-box;
+}
+.span_form_alerta
+{
+    min-width:50%;
+    float: right;
+    clear: right;
+    text-align: right;
+    vertical-align: middle;
+}
+.textoInformativo
+{
+    width: 100%;
+    display:block;
+    margin-top: 0.5%;
+    margin-left: 0.5%;
+    font-size: 70%;
+}
+.errorvalidacion,.errorobligatorio /*para que no aparezcan los mensajes de error*/
+{
+    display: none;
+}
+.marcoinput:nth-child(even)
+{
+    background-color:rgba(140, 140, 140, 0.3);
+}
+.marcoinput:nth-child(odd)
+{
+    background-color:rgba(140, 140, 140, 0.2);
+}
+.marcoinput:hover
+{
+    background-color:rgba(140, 140, 140, 0.5);
+    -moz-transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+}
+.submit_form:hover
+{
+    background-color:rgba(0, 152, 0, 0.1);
+    -moz-transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+}

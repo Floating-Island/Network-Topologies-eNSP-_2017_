@@ -1,0 +1,27 @@
+.footer
+{
+    clear:both;
+    background-color: rgba(255, 255, 255, 0.3);
+    background-repeat: repeat-x;
+    text-align: center;
+    line-height: 2em;
+}
+.left_footer
+{
+    display: inline-block;
+    width:30%;
+    vertical-align: bottom;
+}
+.center_footer
+{
+    display: inline-block;
+    min-width:40%;
+    font-size: 75%;
+    vertical-align: middle;
+    text-align: center;
+}
+.footer_img_logo
+{
+    max-width: 50%;
+    margin: 0;
+}
